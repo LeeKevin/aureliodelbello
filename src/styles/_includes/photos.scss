@@ -1,0 +1,55 @@
+
+$backdrop-opacity: 0.75;
+$lg-toolbar-bg: 'rbga(0, 0, 0, 0)';
+$lg-icon-bg: $lg-toolbar-bg;
+@import "lightgallery.js/src/sass/lightgallery";
+
+.grid {
+  @include clearfix;
+}
+
+.grid-item {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 33%;
+  opacity: 0;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.grid-item.shown,
+.no-js .grid-item,
+.no-cssanimations .grid-item {
+  opacity: 1;
+}
+
+.grid-item.animate {
+  transform: translateY(200px);
+  animation: moveUp 0.65s ease forwards;
+}
+
+@keyframes moveUp {
+  0% {
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid-item {
+    width: 100%;
+  }
+}

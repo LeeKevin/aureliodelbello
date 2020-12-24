@@ -1,0 +1,36 @@
+@import "../theme";
+
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  border: 1px solid $default-font-color;
+  padding: 12px 36px;
+  line-height: 1;
+  font-family: $sans-serif-font-family;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $default-font-color;
+    color: #ffffff;
+    border: 1px solid $default-font-color;
+  }
+
+  &[data-selected=true] {
+    background: $default-font-color;
+    color: #ffffff;
+    border: 1px solid $default-font-color;
+  }
+}
+
+
+button {
+  padding: 8px 24px;
+  font-family: inherit;
+  background: none;
+  outline: none;
+  border: 1px solid currentColor;
+  cursor: pointer;
+  line-height: 1;
+}

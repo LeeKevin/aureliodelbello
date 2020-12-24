@@ -1,0 +1,15 @@
+$font-family: "Publico Text Roman", serif;
+$header-font-family: "Voyage", serif;
+$sans-serif-font-family: 'Barlow', sans-serif;
+$logo-font-family: 'Canela Thin', serif;
+
+$default-font-color: #31313a;
+
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

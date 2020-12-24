@@ -1,0 +1,42 @@
+@import "theme";
+@import "_includes/photos";
+
+p {
+  margin: 16px 0;
+  text-align: justify;
+
+  a {
+    color: #75a8b7 !important;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+article {
+  padding-bottom: 60px;
+
+  p {
+    animation: fadein 1s ease;
+  }
+
+  p.shown,
+  .no-js p,
+  .no-cssanimations p {
+    opacity: 1;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{ siteName }}</title>
+
+    {{>meta }}
+</head>
+<body>
+{{> header title="Aurelio Delbello" }}
+<div class="container">
+    <article id="article">
+        <p>
+            Aurelio “Rel” Delbello, husband, father, teacher, coach, and author, passed away after a lengthy battle with
+            Alzheimer’s disease on December 23, 2020 at the age of 71 years.
+        </p>
+
+        <p>
+            In addition to his loving wife Diane Delbello (née Grbavac), Rel leaves behind his daughters Mandy (Scott)
+            and
+            Janelle (Kevin); sons Tom (Chris) and Conor (Anna); brother Oriano (Brenda); and his grandchildren Madeleine
+            and
+            Jackson.
+        </p>
+        <div style="text-align: center;">
+            <img src="images/Aurelio.jpg" alt="Aurelio Delbello" class="img"/>
+        </div>
+        <p>
+            Rel was born on July 9, 1949 in Trieste, Italy to Gioacchino and Maria Delbello. In 1957, he and his parents
+            immigrated to Canada, settling in Coaldale. He grew up in Lethbridge and graduated from Catholic Central
+            High
+            School
+            in 1968. Rel was a CCH Cougar athlete throughout his high school years, playing on both the basketball and
+            football
+            teams. From 1969-1973, he attended Minot State University in North Dakota, where he played football and
+            obtained
+            a
+            Bachelor of Science in Physical Education.
+        </p>
+
+        <p>
+            Rel enjoyed a 35-year-long career in the Holy Spirit Catholic School Division, primarily teaching at his
+            alma
+            mater,
+            Catholic Central High School. Rel also rejoined the CCH Cougars football team from 1975-1983 as their Head
+            Coach.
+            During his tenure, Rel and his long-time friend and colleague, Rick Credico, led the team to several
+            championships.
+            After retiring from teaching in 2009, Rel spent the following three years working with students in the
+            Registered
+            Apprenticeship Program through CAREERS: The Next Generation.
+        </p>
+
+        <p>
+            Between 1990 and 1992, Rel co-authored the “Century 21 Accounting: Third Canadian Edition” textbook, along
+            with
+            related workbooks and guides. Today, his textbook is still used in classrooms to prepare students for a
+            career
+            in
+            accounting and to educate businesses in basic accounting practices.
+        </p>
+
+        <p>
+            Rel’s hobbies and interests reflected his deep love for his children. He loved sharing his passion for
+            sports
+            with
+            them and could be found behind the bench as their coach or in the stands as their biggest cheerleader. Rel
+            took
+            a
+            keen interest in videography, mainly in order to capture every moment with his family. On vacation, he would
+            be
+            reliably recording with the latest video camera in hand. Finally, Rel had a love of sweets (and ice cream in
+            particular), sharing his secret stashes with his children.
+        </p>
+
+        <p>
+            Rel is predeceased by his parents, Gioacchino and Maria, and brother, Marino.
+        </p>
+
+        <p>
+            A private family memorial mass will be held on Tuesday, December 29, 2020 at 11:00AM with Father Kevin
+            Tumback
+            celebrating. The mass will be live-streamed and may be accessed via Rel’s obituary on the Cornerstone
+            website:
+        </p>
+
+        <p style="text-align: center;">
+            <a href="https://www.cornerstonefuneralhome.com/obituary/delbello-aurelio-rel">https://www.cornerstonefuneralhome.com/obituary/delbello-aurelio-rel</a>
+        </p>
+
+        <p>
+            The family will host a celebration of his life at a later date.
+        </p>
+
+        <p>
+            For those who wish to share stories, memories, or photos with the Delbello family—please email
+            <a href="mailto:remembering@aureliodelbello.com" title="Share memories of Rel">remembering@aureliodelbello.com</a>.
+        </p>
+    </article>
+
+    <h2>Memories</h2>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1/dist/js/lightgallery.min.js"></script>
+    <div id="grid" class="grid">
+        {{#each images}}
+        <div class="grid-item" data-src="{{this}}"><img src="{{this}}"/></div>
+        {{/each}}
+    </div>
+</div>
+{{> footer }}
+</body>

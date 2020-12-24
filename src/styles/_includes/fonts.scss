@@ -1,0 +1,82 @@
+$fa-font-path: "fonts/";
+@import "font-awesome/scss/font-awesome";
+
+@font-face {
+  font-family: 'Voyage';
+  src: url('/fonts/voyage-regular.eot');
+  src: url('/fonts/voyage-regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/voyage-regular.woff2') format('woff2'),
+  url('/fonts/voyage-regular.woff') format('woff'),
+  url('/fonts/voyage-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Voyage';
+  src: url('/fonts/voyage-bold.eot');
+  src: url('/fonts/voyage-bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/voyage-bold.woff2') format('woff2'),
+  url('/fonts/voyage-bold.woff') format('woff'),
+  url('/fonts/voyage-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publico Text Roman';
+  src: url('/fonts/PublicoText-Roman.eot');
+  src: url('/fonts/PublicoText-Roman.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/PublicoText-Roman.woff2') format('woff2'),
+  url('/fonts/PublicoText-Roman.woff') format('woff'),
+  url('/fonts/PublicoText-Roman.ttf') format('truetype'),
+  url('/fonts/PublicoText-Roman.svg#PublicoText-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publico Text Roman';
+  src: url('/fonts/PublicoText-Bold.eot');
+  src: url('/fonts/PublicoText-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/PublicoText-Bold.woff2') format('woff2'),
+  url('/fonts/PublicoText-Bold.woff') format('woff'),
+  url('/fonts/PublicoText-Bold.ttf') format('truetype'),
+  url('/fonts/PublicoText-Bold.svg#PublicoText-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publico Text Roman';
+  src: url('/fonts/PublicoText-BoldItalic.eot');
+  src: url('/fonts/PublicoText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/PublicoText-BoldItalic.woff2') format('woff2'),
+  url('/fonts/PublicoText-BoldItalic.woff') format('woff'),
+  url('/fonts/PublicoText-BoldItalic.ttf') format('truetype'),
+  url('/fonts/PublicoText-BoldItalic.svg#PublicoText-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Publico Text Roman';
+  src: url('/fonts/PublicoText-Italic.eot');
+  src: url('/fonts/PublicoText-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/PublicoText-Italic.woff2') format('woff2'),
+  url('/fonts/PublicoText-Italic.woff') format('woff'),
+  url('/fonts/PublicoText-Italic.ttf') format('truetype'),
+  url('/fonts/PublicoText-Italic.svg#PublicoText-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Canela Thin";
+  src: url("/fonts/b1edfa746f416280b3502ba39df2c3ae.eot"); /* IE9*/
+  src: url("/fonts/b1edfa746f416280b3502ba39df2c3ae.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/b1edfa746f416280b3502ba39df2c3ae.woff2") format("woff2"), /* chrome、firefox */
+  url("/fonts/b1edfa746f416280b3502ba39df2c3ae.woff") format("woff"), /* chrome、firefox */
+  url("/fonts/b1edfa746f416280b3502ba39df2c3ae.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("/fonts/b1edfa746f416280b3502ba39df2c3ae.svg#Canela-Thin") format("svg"); /* iOS 4.1- */
+}

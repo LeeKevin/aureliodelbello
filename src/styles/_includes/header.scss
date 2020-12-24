@@ -1,0 +1,96 @@
+@import "../theme";
+
+header {
+  width: 100%;
+  z-index: 999;
+  position: relative;
+  margin-bottom: 36px;
+
+  h1 {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header-text {
+  text-align: center;
+  padding: 32px 0 16px;
+  font-family: $header-font-family;
+  font-size: 24px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  line-height: 1;
+  font-family: $logo-font-family;
+  font-weight: 300;
+  font-size: 60px;
+  margin: 24px 0 16px;
+
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.sub-text {
+  font-family: $logo-font-family;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.covid-banner {
+  padding: 4px;
+  max-width: 1000px;
+  margin: 16px auto 0;
+  font-size: 14px;
+
+  line-height: 1.5;
+  background: #ffa860;
+  color: #ffffff;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  .fa {
+    font-size: 20px;
+    margin: 0 32px;
+  }
+
+  > div {
+    padding: 4px 8px;
+    background: #fff;
+    color: #666666;
+    border-radius: 2px;
+  }
+
+  p {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 8px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-device-width: 700px), (max-width: 720px) {
+    text-align: center;
+    flex-direction: column;
+
+    .fa {
+      margin: 16px 0;
+    }
+  }
+}
+
+@media (max-device-width: 600px), (max-width: 620px) {
+}
