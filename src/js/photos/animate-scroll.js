@@ -65,7 +65,6 @@ import Masonry from 'masonry-layout/masonry'
 
     function AnimOnScroll(el, options) {
         this.el = el;
-        this.itemClass = Math.random().toString(36).substring(7);
         this.options = extend(this.defaults, options);
         this._init();
     }
@@ -82,8 +81,7 @@ import Masonry from 'masonry-layout/masonry'
             viewportFactor: 0
         },
         _init: function () {
-            Array.from(this.el.children).forEach(el => el.classList.add(this.itemClass));
-            this.items = Array.prototype.slice.call(this.el.children);
+            this.items = Array.prototype.slice.call(document.querySelectorAll('#' + this.el.id + ' .grid-item'));
             this.itemsCount = this.items.length;
             this.itemsRenderedCount = 0;
             this.didScroll = false;
@@ -94,7 +92,7 @@ import Masonry from 'masonry-layout/masonry'
 
                 // initialize masonry
                 new Masonry(self.el, {
-                    itemSelector: '.' + this.itemClass,
+                    itemSelector: '.grid-item',
                     transitionDuration: 0
                 });
 
